@@ -13,11 +13,6 @@ RUN \
         || [ "${BUILD_ARCH}" = "aarch64" ]; then \
         URL="http://ports.ubuntu.com/ubuntu-ports/"; \
     fi \
-    && echo "deb ${URL} xenial universe" \
-        > /etc/apt/sources.list.d/xenial-universe.list \
-    \
-    && echo "deb ${URL} xenial main" \
-        > /etc/apt/sources.list.d/xenial-main.list \
     \
     && apt-get update \
     \
@@ -25,7 +20,7 @@ RUN \
         binutils=2.30-21ubuntu1~18.04.2 \
         jsvc=1.0.15-8 \
         libcap2=1:2.25-1.2 \
-        mongodb-server=1:2.6.10-0ubuntu1 \
+        mongodb-server=1:3.4.7-0ubuntu1 \
         openjdk-8-jdk-headless=8u232-b09-0ubuntu1~18.04.1 \
     \
     && curl -J -L -o /tmp/unifi.deb \
