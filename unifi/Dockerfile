@@ -28,6 +28,7 @@ RUN \
         binutils=2.30-21ubuntu1~18.04.2 \
         jsvc=1.0.15-8 \
         libcap2=1:2.25-1.2 \
+        logrotate=3.11.0-0.1ubuntu1 \
         mongodb-org=3.4.17 \
         openjdk-8-jdk-headless=8u232-b09-0ubuntu1~18.04.1 \
     \
