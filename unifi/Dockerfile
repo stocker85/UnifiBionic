@@ -16,7 +16,7 @@ RUN \
     \
     && apt-get update \
     \
-    && apt-get install gnupg \
+    && apt-get install -y --no-install-recommends gnupg \
     \
     && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6 \
     \
