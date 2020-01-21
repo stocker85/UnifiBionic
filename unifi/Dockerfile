@@ -14,13 +14,17 @@ RUN \
         URL="http://ports.ubuntu.com/ubuntu-ports/"; \
     fi \
     \
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6 \
+    \
+    echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.4.list \
+    \
     && apt-get update \
     \
     && apt-get install -y --no-install-recommends \
         binutils=2.30-21ubuntu1~18.04.2 \
         jsvc=1.0.15-8 \
         libcap2=1:2.25-1.2 \
-        mongodb-server=1:3.4.7-0ubuntu1 \
+        mongodb-org-server=3.4.17 \
         openjdk-8-jdk-headless=8u232-b09-0ubuntu1~18.04.1 \
     \
     && curl -J -L -o /tmp/unifi.deb \
