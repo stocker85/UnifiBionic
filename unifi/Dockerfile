@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/ubuntu-base:4.0.3
+ARG BUILD_FROM=hassioaddons/ubuntu-base:5.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -25,15 +25,15 @@ RUN \
     && apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        binutils=2.30-21ubuntu1~18.04.2 \
+        binutils=2.30-21ubuntu1~18.04.3 \
         jsvc=1.0.15-8 \
         libcap2=1:2.25-1.2 \
         logrotate=3.11.0-0.1ubuntu1 \
         mongodb-org=3.6.17 \
-        openjdk-8-jdk-headless=8u242-b08-0ubuntu3~18.04 \
+        openjdk-8-jdk-headless=8u252-b09-1~18.04 \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ubnt.com/unifi/5.13.10-202b4c03d0/unifi_sysvinit_all.deb" \ 
+        "https://dl.ui.com/unifi/5.13.18-b0197fba32/unifi_sysvinit_all.deb" \ 
     \
     && dpkg --install /tmp/unifi.deb \
     \
