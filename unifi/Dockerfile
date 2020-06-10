@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/ubuntu-base:5.1.0
+ARG BUILD_FROM=hassioaddons/ubuntu-base:5.2.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -33,7 +33,7 @@ RUN \
         openjdk-8-jdk-headless=8u252-b09-1~18.04 \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/5.13.18-b0197fba32/unifi_sysvinit_all.deb" \ 
+        "https://dl.ui.com/unifi/5.14.9-393d589aeb/unifi_sysvinit_all.deb" \ 
     \
     && dpkg --install /tmp/unifi.deb \
     \
