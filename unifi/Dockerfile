@@ -25,12 +25,12 @@ RUN \
     && apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        binutils=2.30-21ubuntu1~18.04.3 \
+        binutils=2.30-21ubuntu1~18.04.4 \
         jsvc=1.0.15-8 \
         libcap2=1:2.25-1.2 \
         logrotate=3.11.0-0.1ubuntu1 \
         mongodb-org=3.6.17 \
-        openjdk-8-jdk-headless=8u252-b09-1~18.04 \
+        openjdk-8-jdk-headless=8u265-b01-0ubuntu2~18.04 \
     \
     && curl -J -L -o /tmp/unifi.deb \
         "https://dl.ui.com/unifi/6.0.8-743c4647bb/unifi_sysvinit_all.deb" \ 
