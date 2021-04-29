@@ -1,6 +1,6 @@
 {
   "name": "UniFi Controller",
-  "version": "6.1.64",
+  "version": "6.2.23",
   "slug": "unifi",
   "description": "Manage your UniFi network using a web browser",
   "url": "https://github.com/stocker85/UnifiBionic",
